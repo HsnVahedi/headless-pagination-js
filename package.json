@@ -1,6 +1,6 @@
 {
   "name": "headless-pagination-js",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "javascript pagination helper",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
