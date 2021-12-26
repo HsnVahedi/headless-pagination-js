@@ -1,5 +1,5 @@
 import {
-  getPagination,
+  paginate,
   DOTS,
   PaginationParameters,
 } from '../src/index'
@@ -13,7 +13,7 @@ test(
       pageSize: 1,
       siblingCount: 1,
     }
-    const paginated = getPagination(parameters)
+    const paginated = paginate(parameters)
     expect(
       paginated.toString()
     ).toBe([
@@ -31,7 +31,7 @@ test(
       pageSize: 1,
       siblingCount: 2,
     }
-    const paginated = getPagination(parameters)
+    const paginated = paginate(parameters)
     expect(
       paginated.toString()
     ).toBe([
@@ -49,7 +49,7 @@ test(
       pageSize: 1,
       siblingCount: 0,
     }
-    const paginated = getPagination(parameters)
+    const paginated = paginate(parameters)
     expect(
       paginated.toString()
     ).toBe([
@@ -67,7 +67,7 @@ test(
       pageSize: 11,
       siblingCount: 0,
     }
-    const paginated = getPagination(parameters)
+    const paginated = paginate(parameters)
     expect(
       paginated.toString()
     ).toBe([
@@ -85,7 +85,7 @@ test(
       pageSize: 11,
       siblingCount: 5,
     }
-    const paginated = getPagination(parameters)
+    const paginated = paginate(parameters)
     expect(
       paginated.toString()
     ).toBe([
@@ -103,7 +103,7 @@ test(
       pageSize: 11,
       siblingCount: 50,
     }
-    const paginated = getPagination(parameters)
+    const paginated = paginate(parameters)
     expect(
       paginated.toString()
     ).toBe([
@@ -121,7 +121,7 @@ test(
       pageSize: 11,
       siblingCount: 50,
     }
-    const paginated = getPagination(parameters)
+    const paginated = paginate(parameters)
     expect(
       paginated.toString()
     ).toBe([
@@ -139,7 +139,7 @@ test(
       pageSize: 11,
       siblingCount: 0,
     }
-    const paginated = getPagination(parameters)
+    const paginated = paginate(parameters)
     expect(
       paginated.toString()
     ).toBe([
@@ -157,7 +157,7 @@ test(
       pageSize: 7,
       siblingCount: 0,
     }
-    const paginated = getPagination(parameters)
+    const paginated = paginate(parameters)
     expect(
       paginated.toString()
     ).toBe([

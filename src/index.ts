@@ -12,7 +12,7 @@ export type PaginationParameters = {
   siblingCount?: number
 }
 
-export const getPagination = ({
+export const paginate = ({
   currentPage,
   totalCount,
   pageSize,
